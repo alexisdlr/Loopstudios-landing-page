@@ -1,0 +1,30 @@
+.leader {
+  background-color: $white;
+  margin-top: 10rem;
+  
+  .container {
+    display: flex;
+    position: relative;
+    img {
+      width: 70%;
+    }
+    
+    &_cont-text {
+      width: 600px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 99;
+      background-color: $white;
+      padding: 4rem 4rem 1.5rem 4rem;
+    }
+    &_title {
+      color: #000;
+      font-size: 2.8rem;
+    }
+    &_parag {
+      color: $dark-gray;
+    }
+  }
+ 
+}

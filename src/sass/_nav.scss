@@ -1,0 +1,13 @@
+.container {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_ul {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+  }
+}
