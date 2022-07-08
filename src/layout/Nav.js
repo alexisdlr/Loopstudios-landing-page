@@ -1,3 +1,4 @@
+import Link from '../components/Link';
 import {ReactComponent as LOGO} from '../images/logo.svg';
 
 const dataUl = [
@@ -19,9 +20,7 @@ const Nav = () => {
           {
             dataUl.map(({id, data}) => (
               <li key={id}>
-                <a href='#'className='link' >
-                  {data}
-                </a>
+                <Link content={data} />
               </li>
             ))
           }

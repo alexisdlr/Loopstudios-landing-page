@@ -1,5 +1,6 @@
-const Link= ({className}) => {
+const Link= ({content}) => {
   return(
-    <a className={className}></a>
+    <a className='link' href='#' >{content}</a>
   )
 }
+export default Link;

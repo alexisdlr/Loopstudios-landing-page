@@ -1,0 +1,36 @@
+
+.container-creations {
+  &_text {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 2.5rem;
+    }
+    .link {
+      padding: .4rem 1.2rem;
+      color: #000;
+      letter-spacing: .4rem;
+      border: 1px solid #000;
+     }
+
+  }
+  .creations {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; 
+    .card {
+     position: relative;
+     cursor:pointer;
+     &_title {
+      position: absolute;
+      bottom:.5rem;
+      left: 1.5rem
+     }
+    
+    }
+
+  }
+}
