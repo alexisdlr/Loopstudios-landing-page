@@ -3,6 +3,7 @@ import MainBanner from './layout/MainBanner';
 import Nav from './layout/Nav';
 import Leader from './layout/Leader';
 import Creations from './layout/Creations';
+import Footer from './layout/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Leader />
         <Creations />
       </main>
+      <Footer />
     </div>
   );
 }

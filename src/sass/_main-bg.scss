@@ -1,4 +1,5 @@
 
+
 .main-bg {
   position: absolute;
   top: 0;
@@ -27,7 +28,18 @@
     max-width: 650px;
     .subtitle {
       font-size: 4.5rem;
+      
     }
   }
-
+}
+@media (min-width: 375px ) and (max-width: 800px) {
+  .container {
+    &_text {
+      padding: 0 2rem;
+      .subtitle {
+        font-size: 2.2rem;
+        
+      }
+    }
+  }
 }

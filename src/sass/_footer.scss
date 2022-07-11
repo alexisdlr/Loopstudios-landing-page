@@ -1,0 +1,75 @@
+.footer {
+  background-color: #000;
+  .cont-all {
+    @include flex(row, space-between, center);
+    .cont-nav {
+      @include flex(column, center, start);
+      ul {
+        padding: 0;
+        @include flex (row, center, center);
+        gap: 1.5rem;
+        .link {
+          font-size: .8rem;
+          transition: all 300ms ease-in-out;
+          &:hover {
+            border-bottom: 1px solid $white;
+          }
+        }
+      }
+    }
+    .cont-icons {
+      @include flex(column, center, end);
+      .icons {
+        @include flex(row, center, center);
+        gap: 1rem;
+        .icon {
+          cursor: pointer;
+          &:hover {
+            border-bottom: 1px solid $white;
+          }
+          
+        }
+      }
+      .copyright-text {
+        font-size: .75rem;
+        color: $very-dark-gray;
+      }
+    }
+  }
+  
+ 
+}
+@media (min-width: 375px ) and (max-width: 800px) {
+  .footer {
+    .cont-all {
+      @include flex(column, center, center);
+      .cont-nav {
+        @include flex(column, center, center);
+        ul {
+          @include flex (column, center, center);
+          gap: 1.5rem;
+          .link {
+            font-size: 1rem;
+            transition: all 300ms ease-in-out;
+            &:hover {
+              border-bottom: 1px solid $white;
+            }
+          }
+        }
+      }
+      .cont-icons {
+        align-items: center;
+        margin-top: 1rem;
+
+        .icons {
+          @include flex(row, center, center);
+          gap: 1rem;
+        
+        }
+      
+      }
+    }
+    
+   
+  }
+}

@@ -3,7 +3,6 @@
   margin-top: 12rem;
   
   .container {
-    display: flex;
     position: relative;
     img {
       width: 70%;
@@ -27,4 +26,30 @@
     }
   }
  
+} 
+@media (min-width: 375px ) and (max-width: 800px) {
+  .leader {
+    margin-top: 17rem;
+    position: initial;
+    
+    .container {
+      img {
+        width: 100%;
+      }
+      
+      &_cont-text {
+        width: auto;
+        position: initial;
+        padding: 0;
+        text-align: center;
+      }
+      &_title {
+        font-size: 1.8rem;
+      }
+      &_parag {
+        font-size: .85rem;
+      }
+    }
+   
+  } 
 }
